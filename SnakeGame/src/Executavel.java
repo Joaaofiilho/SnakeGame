@@ -16,6 +16,8 @@ public class Executavel {
     //. O tempo acabou. (Derrota)
     public static void main(String[] args) {
         Console console = new Console();
+        console.abrirTerminal();
+        console.ajustarTamanhoTerminal();
         while(!console.isFimDoJogo()){
             try {
                 Thread.sleep(console.timePorSegundo);
@@ -23,9 +25,7 @@ public class Executavel {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if(console.getTimeLimite() % 1000 == 0){
-                System.out.printf("%s\n", console.converterParaMinuto(console.getTimeLimite()));
-            }
+            console.exibirTempo();
         }
     }
 }
