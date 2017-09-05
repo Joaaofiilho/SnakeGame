@@ -16,16 +16,6 @@ public class Executavel {
     //. O tempo acabou. (Derrota)
     public static void main(String[] args) {
         Console console = new Console();
-        console.abrirTerminal();
-        console.ajustarTamanhoTerminal();
-        while(!console.isFimDoJogo()){
-            try {
-                Thread.sleep(console.timePorSegundo);
-                console.addTimeAtual(console.timePorSegundo);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            console.exibirTempo();
-        }
+        console.executarJogo();
     }
 }
