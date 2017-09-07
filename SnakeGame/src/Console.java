@@ -421,8 +421,8 @@ public class Console {
         boolean isIgual;
         for (int i = 0; i < comida.length; i++) {
             comida[i] = new Comida();
-            comida[i].setPosicaoI(2 + dado.nextInt(terminalSize.getColumns()-2));
-            comida[i].setPosicaoJ(2 + dado.nextInt(terminalSize.getRows()-2));
+            comida[i].setPosicaoI(3 + dado.nextInt(terminalSize.getColumns()-3));
+            comida[i].setPosicaoJ(3 + dado.nextInt(terminalSize.getRows()-3));
             //Repete até cair em um local onde já não haja uma fruta
             do {
                 isIgual = false;
@@ -434,8 +434,8 @@ public class Console {
                         isIgual = true;
                     }
                 }
-                comida[i].setPosicaoI(2 + dado.nextInt(terminalSize.getColumns()-2));
-                comida[i].setPosicaoJ(2 + dado.nextInt(terminalSize.getRows()-2));
+                comida[i].setPosicaoI(3 + dado.nextInt(terminalSize.getColumns()-3));
+                comida[i].setPosicaoJ(3 + dado.nextInt(terminalSize.getRows()-3));
             }while(isIgual);
 
             terminal.moveCursor(comida[i].getPosicaoI(), comida[i].getPosicaoJ());
@@ -444,8 +444,8 @@ public class Console {
 
         for (int i = 0; i < obstaculo.length; i++) {
             obstaculo[i] = new Obstaculo();
-            obstaculo[i].setPosicaoI(2 + dado.nextInt(terminalSize.getColumns()-2));
-            obstaculo[i].setPosicaoJ(2 + dado.nextInt(terminalSize.getRows()-2));
+            obstaculo[i].setPosicaoI(3 + dado.nextInt(terminalSize.getColumns()-3));
+            obstaculo[i].setPosicaoJ(3 + dado.nextInt(terminalSize.getRows()-3));
             do {
                 isIgual = false;
                 for (int j = i-1; j >= 0; j--) {
@@ -458,8 +458,8 @@ public class Console {
                         isIgual = true;
                     }
                 }
-                obstaculo[i].setPosicaoI(1 + dado.nextInt(terminalSize.getColumns()-1));
-                obstaculo[i].setPosicaoJ(1 + dado.nextInt(terminalSize.getRows()-1));
+                obstaculo[i].setPosicaoI(3 + dado.nextInt(terminalSize.getColumns()-3));
+                obstaculo[i].setPosicaoJ(3 + dado.nextInt(terminalSize.getRows()-3));
             }while(isIgual);
             terminal.moveCursor(obstaculo[i].getPosicaoI(), obstaculo[i].getPosicaoJ());
             terminal.putCharacter('B');
