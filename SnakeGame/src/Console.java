@@ -82,6 +82,10 @@ public class Console {
                         comida[i].setDisponivel(false);
                         cobrinha.aumentarTamanho();
                         aumentarQntFrutasPegas();
+                        //Fazer a cobrinha ganhar uma vida
+                        if(getQntFrutasPegas() % 3 == 0 && getQntFrutasPegas() != comida.length){
+                            cobrinha.addVida();
+                        }
                     }
                 }
 

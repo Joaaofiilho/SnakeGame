@@ -31,6 +31,10 @@ public class Cobrinha {
     }
 
     //Métodos Especiais
+    public void addVida(){
+        setQntVidas(getQntVidas() + 1);
+    }
+
     public void aumentarTamanho(){
         setTamAtual(getTamAtual()+1);
     }
