@@ -91,9 +91,10 @@ public class Console {
 
                 //Verificar se a cobrinha bateu em algum obstaculo
                 for (int i = 0; i < obstaculo.length; i++) {
-                    if(posCobrinhaI[0] == obstaculo[i].getPosicaoI() && posCobrinhaJ[0] == obstaculo[i].getPosicaoJ()){
+                    if(obstaculo[i].isDisponivel() && posCobrinhaI[0] == obstaculo[i].getPosicaoI()
+                            && posCobrinhaJ[0] == obstaculo[i].getPosicaoJ()){
                         cobrinha.perderVida();
-                        reset();
+                        obstaculo[i].setDisponivel(false);
                     }
                 }
             }
