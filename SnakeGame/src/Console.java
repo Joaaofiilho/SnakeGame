@@ -478,7 +478,7 @@ public class Console {
     //Getters, Setters e Finals
     final static int timePorSegundo = 100;
 
-    final static int tempoDeJogo = 90000;
+    final static int tempoDeJogo = 80000;
 
     public boolean isFimDoJogo() {
         return fimDoJogo;
