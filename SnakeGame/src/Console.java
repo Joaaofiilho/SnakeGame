@@ -427,8 +427,10 @@ public class Console {
             do {
                 isIgual = false;
                 for (int j = i-1; j >= 0; j--) {
-                    if (comida[i].getPosicaoI() == comida[j].getPosicaoI()
-                            && comida[i].getPosicaoJ() == comida[j].getPosicaoJ()) {
+                    if ((comida[i].getPosicaoI() == comida[j].getPosicaoI()
+                            && comida[i].getPosicaoJ() == comida[j].getPosicaoJ())
+                            || (comida[i].getPosicaoI() == terminalSize.getColumns()/2
+                            && comida[i].getPosicaoJ() == terminalSize.getRows()/2)) {
                         isIgual = true;
                     }
                 }
@@ -450,7 +452,9 @@ public class Console {
                     if ((obstaculo[i].getPosicaoI() == obstaculo[j].getPosicaoI()
                             && obstaculo[i].getPosicaoJ() == obstaculo[j].getPosicaoJ())
                             || (obstaculo[i].getPosicaoI() == comida[j].getPosicaoI()
-                            && obstaculo[i].getPosicaoJ() == comida[j].getPosicaoJ())) {
+                            && obstaculo[i].getPosicaoJ() == comida[j].getPosicaoJ())
+                            || (obstaculo[i].getPosicaoI() == terminalSize.getColumns()/2
+                            && obstaculo[i].getPosicaoJ() == terminalSize.getRows()/2)) {
                         isIgual = true;
                     }
                 }
