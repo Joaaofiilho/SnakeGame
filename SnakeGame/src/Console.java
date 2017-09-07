@@ -244,69 +244,6 @@ public class Console {
         terminal.setCursorVisible(false);
     }
 
-    public void reset(){
-        int posCobrinhaI[] = cobrinha.getPosAtualI();
-        int posCobrinhaJ[] = cobrinha.getPosAtualJ();
-        //Piscar tela para o jogador saber que bateu
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        terminal.applyForegroundColor(Terminal.Color.RED);
-        terminal.clearScreen();
-        exibirTempo();
-        exibirVidas();
-        exibirParedes();
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        terminal.applyForegroundColor(Terminal.Color.GREEN);
-        terminal.clearScreen();
-        exibirTempo();
-        exibirVidas();
-        exibirParedes();
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        terminal.applyForegroundColor(Terminal.Color.RED);
-        terminal.clearScreen();
-        exibirTempo();
-        exibirVidas();
-        exibirParedes();
-        try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        terminal.applyForegroundColor(Terminal.Color.GREEN);
-        terminal.clearScreen();
-        exibirTempo();
-        exibirVidas();
-        exibirParedes();
-
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        terminal.applyForegroundColor(Terminal.Color.CYAN);
-        terminal.clearScreen();
-        evocarEntidades();
-        exibirTempo();
-        exibirVidas();
-        exibirParedes();
-        setQntFrutasPegas(0);
-        posCobrinhaI[0] = terminalSize.getColumns()/2;
-        posCobrinhaJ[0] = terminalSize.getRows()/2;
-        cobrinha.setTamAtual(1);
-
-    }
-
     public void exibirTempo(){
         String tempo = converterParaMinuto(getTimeLimite());
         if(getTimeLimite() % 1000 == 0){
