@@ -421,8 +421,8 @@ public class Console {
         boolean isIgual;
         for (int i = 0; i < comida.length; i++) {
             comida[i] = new Comida();
-            comida[i].setPosicaoI(1 + dado.nextInt(terminalSize.getColumns()-1));
-            comida[i].setPosicaoJ(1 + dado.nextInt(terminalSize.getRows()-1));
+            comida[i].setPosicaoI(2 + dado.nextInt(terminalSize.getColumns()-2));
+            comida[i].setPosicaoJ(2 + dado.nextInt(terminalSize.getRows()-2));
             //Repete até cair em um local onde já não haja uma fruta
             do {
                 isIgual = false;
