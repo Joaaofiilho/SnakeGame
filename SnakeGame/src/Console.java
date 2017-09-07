@@ -462,7 +462,7 @@ public class Console {
                 obstaculo[i].setPosicaoJ(3 + dado.nextInt(terminalSize.getRows()-3));
             }while(isIgual);
             terminal.moveCursor(obstaculo[i].getPosicaoI(), obstaculo[i].getPosicaoJ());
-            terminal.putCharacter('B');
+            terminal.putCharacter('X');
         }
     }
 
