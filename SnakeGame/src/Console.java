@@ -246,16 +246,14 @@ public class Console {
 
     public void exibirTempo(){
         String tempo = converterParaMinuto(getTimeLimite());
-        if(getTimeLimite() % 1000 == 0){
-            terminal.moveCursor( terminalSize.getColumns()/2-2, 0);
-            terminal.putCharacter('[');
-            for (int i = 0; i < tempo.length(); i++) {
-                terminal.moveCursor(i + terminalSize.getColumns()/2-1, 0);
-                terminal.putCharacter(tempo.charAt(i));
-            }
-            terminal.moveCursor( terminalSize.getColumns()/2-1 + tempo.length(), 0);
-            terminal.putCharacter(']');
+        terminal.moveCursor( terminalSize.getColumns()/2-2, 0);
+        terminal.putCharacter('[');
+        for (int i = 0; i < tempo.length(); i++) {
+            terminal.moveCursor(i + terminalSize.getColumns()/2-1, 0);
+            terminal.putCharacter(tempo.charAt(i));
         }
+        terminal.moveCursor( terminalSize.getColumns()/2-1 + tempo.length(), 0);
+        terminal.putCharacter(']');
     }
 
     public void exibirParedes(){
@@ -496,8 +494,8 @@ public class Console {
         this.timeDecorrido = timeDecorrido;
     }
 
-    public void addTimeAtual(double time) {
-        this.setTimeLimite(getTimeLimite()- timePorSegundo);
+    public void addTimeAtual(int time) {
+        this.setTimeLimite(getTimeLimite()- time);
         this.timeDecorrido += time;
     }
 
