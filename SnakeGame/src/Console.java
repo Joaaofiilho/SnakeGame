@@ -476,7 +476,7 @@ public class Console {
         return min;
     }
     //Getters, Setters e Finals
-    final static int timePorSegundo = 100;
+    final static int timePorSegundo = 1000/10;
 
     final static int tempoDeJogo = 60000;
 
