@@ -246,13 +246,13 @@ public class Console {
         System.exit(0);
     }
 
-    public void executarTerminal(){
+    private void executarTerminal(){
         terminal.enterPrivateMode();
         terminal.applyForegroundColor(Terminal.Color.CYAN);
         terminal.setCursorVisible(false);
     }
 
-    public void exibirTempo(){
+    private void exibirTempo(){
         String tempo = converterParaMinuto(getTimeLimite());
         terminal.moveCursor( terminalSize.getColumns()/2-2, 0);
         terminal.putCharacter('[');
@@ -264,7 +264,7 @@ public class Console {
         terminal.putCharacter(']');
     }
 
-    public void exibirParedes(){
+    private void exibirParedes(){
         for (int x = 2; x < terminalSize.getRows()-1; x++) {
             terminal.moveCursor(0, x);
             terminal.putCharacter('|');
@@ -286,7 +286,7 @@ public class Console {
         }
     }
 
-    public void exibirVidas(){
+    private void exibirVidas(){
         terminal.moveCursor(0, 0);
         terminal.putCharacter('V');
 
@@ -312,7 +312,7 @@ public class Console {
         terminal.putCharacter(Integer.toString(cobrinha.getQntVidas()).charAt(0));
     }
 
-    public void exibirQntFrutas(){
+    private void exibirQntFrutas(){
         terminal.moveCursor(terminalSize.getColumns()-2, 0);
         terminal.putCharacter('5');
 
@@ -359,7 +359,7 @@ public class Console {
         terminal.putCharacter('F');
     }
 
-    public void exibirCobrinha(){
+    private void exibirCobrinha(){
         int[] posCobrinhaI = cobrinha.getPosAtualI();
         int[] posCobrinhaJ = cobrinha.getPosAtualJ();
 
@@ -367,7 +367,7 @@ public class Console {
         terminal.putCharacter('O');
     }
 
-    public void moverCobrinha(){
+    private void moverCobrinha(){
         int[] posCobrinhaI = cobrinha.getPosAtualI();
         int[] posCobrinhaJ = cobrinha.getPosAtualJ();
 
@@ -413,7 +413,7 @@ public class Console {
         cobrinha.setPosAtualJ(posCobrinhaJ);
     }
 
-    public void apagarCorpoCobrinha(){
+    private void apagarCorpoCobrinha(){
         int[] posCobrinhaI = cobrinha.getPosAtualI();
         int[] posCobrinhaJ = cobrinha.getPosAtualJ();
 
@@ -421,7 +421,7 @@ public class Console {
         terminal.putCharacter(' ');
     }
 
-    public void evocarEntidades(){
+    private void evocarEntidades(){
         for (Comida comidaAux: comida) {
             comidaAux.gerar(comida, obstaculo, terminalSize);
             terminal.moveCursor(comidaAux.getPosicaoJ(), comidaAux.getPosicaoI());
@@ -435,12 +435,12 @@ public class Console {
         }
     }
 
-    public void aumentarQntFrutasPegas(){
+    private void aumentarQntFrutasPegas(){
         setQntFrutasPegas(getQntFrutasPegas() + 1);
     }
 
     //utils
-    public String converterParaMinuto(int num){
+    private String converterParaMinuto(int num){
         String min = Integer.toString(num/60000) + ":" + (num%60000/1000 <= 9 ? "0"+Integer.toString(num%60000/1000) : Integer.toString(num%60000/1000));
         return min;
     }
@@ -449,7 +449,7 @@ public class Console {
 
     final static int tempoDeJogo = 60000;
 
-    public boolean isFimDoJogo() {
+    private boolean isFimDoJogo() {
         return fimDoJogo;
     }
 
@@ -457,20 +457,20 @@ public class Console {
         this.fimDoJogo = fimDoJogo;
     }
 
-    public int getTimeDecorrido() {
+    private int getTimeDecorrido() {
         return timeDecorrido;
     }
 
-    public void setTimeDecorrido(int timeDecorrido) {
+    private void setTimeDecorrido(int timeDecorrido) {
         this.timeDecorrido = timeDecorrido;
     }
 
-    public void addTimeAtual(int time) {
+    private void addTimeAtual(int time) {
         this.setTimeLimite(getTimeLimite()- time);
         this.timeDecorrido += time;
     }
 
-    public int getTimeLimite() {
+    private int getTimeLimite() {
         return timeLimite;
     }
 
@@ -478,19 +478,19 @@ public class Console {
         this.timeLimite = timeLimite;
     }
 
-    public int getQntFrutasPegas() {
+    private int getQntFrutasPegas() {
         return qntFrutasPegas;
     }
 
-    public void setQntFrutasPegas(int qntFrutasPegas) {
+    private void setQntFrutasPegas(int qntFrutasPegas) {
         this.qntFrutasPegas = qntFrutasPegas;
     }
 
-    public boolean isVitoria() {
+    private boolean isVitoria() {
         return vitoria;
     }
 
-    public void setVitoria(boolean vitoria) {
+    private void setVitoria(boolean vitoria) {
         this.vitoria = vitoria;
     }
 }
