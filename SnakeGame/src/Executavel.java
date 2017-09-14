@@ -15,6 +15,8 @@ public class Executavel {
     //. O jogador pega todas as comidas (Vitória)
     //. O tempo acabou. (Derrota)
     public static void main(String[] args) {
+
+
         Console console = new Console();
         console.executarJogo();
     }
