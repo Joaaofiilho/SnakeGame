@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="609ebd37-5ac5-492c-93fc-95fd6a3f8997" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SnakeGame/Comida.class" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Comida.class" />
+    <list default="true" id="609ebd37-5ac5-492c-93fc-95fd6a3f8997" name="Default" comment="bug fixed&#10;Todas as entidades nascem corretamente agora.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SnakeGame/Console.class" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Console.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SnakeGame/Obstaculo.class" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Obstaculo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Comida.java" afterPath="$PROJECT_DIR$/src/Comida.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Console.java" afterPath="$PROJECT_DIR$/src/Console.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Obstaculo.java" afterPath="$PROJECT_DIR$/src/Obstaculo.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,21 +25,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Console.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Console.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Console.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="85" column="57" lean-forward="true" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
+            <state relative-caret-position="261">
+              <caret line="431" column="64" lean-forward="false" selection-start-line="431" selection-start-column="64" selection-end-line="431" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obstaculo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Obstaculo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Obstaculo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="41" column="86" lean-forward="false" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
+            <state relative-caret-position="105">
+              <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,6 +106,9 @@
       <find>timepo</find>
       <find>perder</find>
       <find>teste</find>
+      <find>tempo</find>
+      <find>timep</find>
+      <find>evoc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,9 +131,9 @@
         <option value="$PROJECT_DIR$/src/Cobrinha.java" />
         <option value="$PROJECT_DIR$/src/Executavel.java" />
         <option value="$PROJECT_DIR$/src/Entidade.java" />
-        <option value="$PROJECT_DIR$/src/Console.java" />
         <option value="$PROJECT_DIR$/src/Comida.java" />
         <option value="$PROJECT_DIR$/src/Obstaculo.java" />
+        <option value="$PROJECT_DIR$/src/Console.java" />
       </list>
     </option>
   </component>
@@ -414,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505404308129</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="bug fixed&#10;Todas as entidades nascem corretamente agora.">
+      <created>1505405681509</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1505405681509</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -438,7 +444,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5064865" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32646593" sideWeight="0.49783784" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32646593" sideWeight="0.49783784" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.49351352" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.49783784" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -510,7 +516,8 @@
     <MESSAGE value="Modificando o modo de fim de jogo ao acabar o tempo" />
     <MESSAGE value="bug fixed&#10;Corrigido um bug onde o layout do jogo não executava" />
     <MESSAGE value="Atributos desnecessários da classe &quot;Obstaculo&quot; retirados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atributos desnecessários da classe &quot;Obstaculo&quot; retirados" />
+    <MESSAGE value="bug fixed&#10;Todas as entidades nascem corretamente agora." />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed&#10;Todas as entidades nascem corretamente agora." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,22 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Executavel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Console.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="85" column="57" lean-forward="true" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Comida.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1005,11 +996,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Obstaculo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="41" column="86" lean-forward="false" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
+        <state relative-caret-position="105">
+          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Executavel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="431" column="64" lean-forward="false" selection-start-line="431" selection-start-column="64" selection-end-line="431" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>

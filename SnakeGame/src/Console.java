@@ -422,17 +422,14 @@ public class Console {
     }
 
     public void evocarEntidades(){
-        System.out.println("COMIDAS");
         for (Comida comidaAux: comida) {
             comidaAux.gerar(comida, obstaculo, terminalSize);
-            System.out.printf("%d %d\n", comidaAux.getPosicaoI(), comidaAux.getPosicaoJ());
             terminal.moveCursor(comidaAux.getPosicaoJ(), comidaAux.getPosicaoI());
             terminal.putCharacter('á');
         }
-        System.out.println("OBSTACULOS");
+
         for (Obstaculo obstaculoAux: obstaculo) {
             obstaculoAux.gerar(comida, obstaculo, terminalSize);
-            System.out.printf("%d %d\n", obstaculoAux.getPosicaoI(), obstaculoAux.getPosicaoJ());
             terminal.moveCursor(obstaculoAux.getPosicaoJ(), obstaculoAux.getPosicaoI());
             terminal.putCharacter('X');
         }
