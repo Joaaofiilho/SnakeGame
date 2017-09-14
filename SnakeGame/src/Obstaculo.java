@@ -3,13 +3,7 @@ import com.googlecode.lanterna.terminal.TerminalSize;
 import java.util.Random;
 
 public class Obstaculo extends Entidade{
-    private int posicaoI;
-    private int posicaoJ;
-    private boolean disponivel;
-
-    public Obstaculo(){
-        disponivel = true;
-    }
+    public Obstaculo(){ setDisponivel(true); }
 
     @Override
     public void gerar(Comida comida[], Obstaculo obstaculo[], TerminalSize terminalSize) {

@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="609ebd37-5ac5-492c-93fc-95fd6a3f8997" name="Default" comment="Modificando o modo de fim de jogo ao acabar o tempo">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SnakeGame/Comida.class" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Comida.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SnakeGame/Console.class" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Console.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SnakeGame/Obstaculo.class" afterPath="$PROJECT_DIR$/out/production/SnakeGame/Obstaculo.class" />
+    <list default="true" id="609ebd37-5ac5-492c-93fc-95fd6a3f8997" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Comida.java" afterPath="$PROJECT_DIR$/src/Comida.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Console.java" afterPath="$PROJECT_DIR$/src/Console.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Obstaculo.java" afterPath="$PROJECT_DIR$/src/Obstaculo.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Console.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Console.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Console.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -39,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Obstaculo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Obstaculo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Obstaculo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+            <state relative-caret-position="85">
+              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,7 +49,7 @@
       <file leaf-file-name="Comida.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Comida.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="323">
               <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -132,9 +127,9 @@
         <option value="$PROJECT_DIR$/src/Cobrinha.java" />
         <option value="$PROJECT_DIR$/src/Executavel.java" />
         <option value="$PROJECT_DIR$/src/Entidade.java" />
-        <option value="$PROJECT_DIR$/src/Obstaculo.java" />
         <option value="$PROJECT_DIR$/src/Comida.java" />
         <option value="$PROJECT_DIR$/src/Console.java" />
+        <option value="$PROJECT_DIR$/src/Obstaculo.java" />
       </list>
     </option>
   </component>
@@ -400,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505403010116</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="bug fixed&#10;Corrigido um bug onde o layout do jogo não executava">
+      <created>1505404209570</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1505404209570</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -494,7 +496,8 @@
     <MESSAGE value="Representar tempo de forma diferente." />
     <MESSAGE value="bug fixed&#10;Corrigido um bug onde as comidas e os obstaculos sempre tinham a mesma posição." />
     <MESSAGE value="Modificando o modo de fim de jogo ao acabar o tempo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificando o modo de fim de jogo ao acabar o tempo" />
+    <MESSAGE value="bug fixed&#10;Corrigido um bug onde o layout do jogo não executava" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixed&#10;Corrigido um bug onde o layout do jogo não executava" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -953,14 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entidade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Executavel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -969,9 +964,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entidade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Comida.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="323">
           <caret line="21" column="53" lean-forward="false" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -981,19 +992,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Obstaculo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Console.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
