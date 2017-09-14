@@ -1,6 +1,4 @@
-import java.awt.*;
 import java.nio.charset.Charset;
-import java.util.Random;
 
 import com.googlecode.lanterna.TerminalFacade;
 import com.googlecode.lanterna.input.Key;
