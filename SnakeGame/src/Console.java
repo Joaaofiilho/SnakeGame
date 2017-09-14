@@ -101,8 +101,8 @@ public class Console {
                 for (int i = 0; i < obstaculo.length; i++) {
                     if(obstaculo[i].isDisponivel() && posCobrinhaI[0] == obstaculo[i].getPosicaoI()
                             && posCobrinhaJ[0] == obstaculo[i].getPosicaoJ()){
-                        cobrinha.perderVida();
                         obstaculo[i].setDisponivel(false);
+                        cobrinha.perderVida();
                     }
                 }
             }

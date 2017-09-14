@@ -14,8 +14,8 @@ public class Obstaculo extends Entidade{
     @Override
     public void gerar(Comida comida[], Obstaculo obstaculo[], TerminalSize terminalSize) {
         Random dado = new Random();
-        setPosicaoI(2 + dado.nextInt(terminalSize.getColumns()-3));
-        setPosicaoJ(2 + dado.nextInt(terminalSize.getRows()-4));
+        setPosicaoI(dado.nextInt(terminalSize.getColumns()));
+        setPosicaoJ(dado.nextInt(terminalSize.getRows()));
         //Repete até cair em um local onde já não haja uma fruta
         boolean isIgual;
         do {
@@ -51,8 +51,13 @@ public class Obstaculo extends Entidade{
                 }
             }
 
-            setPosicaoI(2 + dado.nextInt(terminalSize.getColumns()-3));
-            setPosicaoJ(2 + dado.nextInt(terminalSize.getRows()-4));
+            if(getPosicaoI() < 4 || getPosicaoI() > terminalSize.getRows()-4
+                    || getPosicaoJ() < 4 || getPosicaoJ() > terminalSize.getColumns()-4){
+                isIgual = true;
+            }
+
+            setPosicaoI(dado.nextInt(terminalSize.getColumns()));
+            setPosicaoJ(dado.nextInt(terminalSize.getRows()));
         }while(isIgual);
     }
 }
