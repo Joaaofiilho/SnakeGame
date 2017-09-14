@@ -22,26 +22,32 @@ public class Obstaculo extends Entidade{
             isIgual = false;
             for (int i = 0; i < obstaculo.length; i++) {
                 for (int j = 0; j < comida.length; j++) {
-                    if(comida[j].getPosicaoI() == obstaculo[i].getPosicaoI()
-                            && comida[j].getPosicaoJ() == obstaculo[i].getPosicaoJ()){
-                        isIgual = true;
+                    if(!(obstaculo[i].getPosicaoI() == 0 && obstaculo[i].getPosicaoJ() == 0)) {
+                        if (comida[j].getPosicaoI() == obstaculo[i].getPosicaoI()
+                                && comida[j].getPosicaoJ() == obstaculo[i].getPosicaoJ()) {
+                            isIgual = true;
+                        }
                     }
                 }
             }
 
             for (int i = 0; i < obstaculo.length; i++) {
                 for (int j = i; j < obstaculo.length; j++) {
-                    if(obstaculo[i].getPosicaoI() == obstaculo[j].getPosicaoJ()
-                            && obstaculo[i].getPosicaoJ() == obstaculo[j].getPosicaoJ()){
-                        isIgual = true;
+                    if(!(obstaculo[j].getPosicaoI() == 0 && obstaculo[j].getPosicaoJ() == 0)) {
+                        if (obstaculo[i].getPosicaoI() == obstaculo[j].getPosicaoJ()
+                                && obstaculo[i].getPosicaoJ() == obstaculo[j].getPosicaoJ()) {
+                            isIgual = true;
+                        }
                     }
                 }
             }
 
             for (int i = 0; i < obstaculo.length; i++) {
-                if(obstaculo[i].getPosicaoI() == terminalSize.getColumns()/2
-                        && obstaculo[i].getPosicaoJ() == terminalSize.getRows()/2) {
-                    isIgual = true;
+                if(!(obstaculo[i].getPosicaoI() == 0 && obstaculo[i].getPosicaoJ() == 0)) {
+                    if (obstaculo[i].getPosicaoI() == terminalSize.getColumns() / 2
+                            && obstaculo[i].getPosicaoJ() == terminalSize.getRows() / 2) {
+                        isIgual = true;
+                    }
                 }
             }
 
