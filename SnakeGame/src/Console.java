@@ -69,7 +69,7 @@ public class Console {
                 tecla = terminal.readInput();
                 //TODO condições para fim de jogo
                 if(timeLimite <= 0){
-                    cobrinha.perderVida();
+                    setFimDoJogo(true);
                     setVitoria(false);
                 }
                 if(cobrinha.getQntVidas() == 0){
