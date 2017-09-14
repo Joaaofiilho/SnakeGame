@@ -82,8 +82,8 @@ public class Console {
                 }
 
                 //Verificar se a cobrinha comeu alguma comida
-                int posCobrinhaI[] = cobrinha.getPosAtualI();
-                int posCobrinhaJ[] = cobrinha.getPosAtualJ();
+                int posCobrinhaJ[] = cobrinha.getPosAtualI();
+                int posCobrinhaI[] = cobrinha.getPosAtualJ();
                 for (int i = 0; i < comida.length; i++) {
                     if(comida[i].isDisponivel() && posCobrinhaI[0] == comida[i].getPosicaoI() &&
                             posCobrinhaJ[0] == comida[i].getPosicaoJ()){
@@ -422,14 +422,18 @@ public class Console {
     }
 
     public void evocarEntidades(){
+        System.out.println("COMIDAS");
         for (Comida comidaAux: comida) {
             comidaAux.gerar(comida, obstaculo, terminalSize);
-            terminal.moveCursor(comidaAux.getPosicaoI(), comidaAux.getPosicaoJ());
+            System.out.printf("%d %d\n", comidaAux.getPosicaoI(), comidaAux.getPosicaoJ());
+            terminal.moveCursor(comidaAux.getPosicaoJ(), comidaAux.getPosicaoI());
             terminal.putCharacter('á');
         }
+        System.out.println("OBSTACULOS");
         for (Obstaculo obstaculoAux: obstaculo) {
             obstaculoAux.gerar(comida, obstaculo, terminalSize);
-            terminal.moveCursor(obstaculoAux.getPosicaoI(), obstaculoAux.getPosicaoJ());
+            System.out.printf("%d %d\n", obstaculoAux.getPosicaoI(), obstaculoAux.getPosicaoJ());
+            terminal.moveCursor(obstaculoAux.getPosicaoJ(), obstaculoAux.getPosicaoI());
             terminal.putCharacter('X');
         }
     }
